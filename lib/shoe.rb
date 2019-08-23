@@ -4,10 +4,9 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    if BRANDS does not include?(brand)
-      brand = nil
+    unless BRANDS.include?(brand)
+      BRANDS << brand
     end
-    BRANDS << brand
   end
   
   BRANDS = []
